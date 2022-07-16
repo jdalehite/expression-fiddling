@@ -1,0 +1,102 @@
+{
+  "ConversationsBySpeaker": {
+    "Cindy": {
+      "DialogsByID": {
+        "Start": {
+          "Statement": "It's so good to see you, I haven't seen you since Donna's thing!",
+          "Responses": [
+            {
+              "CanSayExpression": {
+                "$type": "Serialize.Linq.Nodes.LambdaExpressionNode, Serialize.Linq",
+                "Body": {
+                  "$type": "Serialize.Linq.Nodes.BinaryExpressionNode, Serialize.Linq",
+                  "Left": {
+                    "$type": "Serialize.Linq.Nodes.MemberExpressionNode, Serialize.Linq",
+                    "Expression": {
+                      "$type": "Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq",
+                      "Name": "x",
+                      "NodeType": 38,
+                      "Type": {
+                        "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                        "Name": "ExpressionFiddling.InteractionContext"
+                      }
+                    },
+                    "Member": {
+                      "$type": "Serialize.Linq.Nodes.MemberInfoNode, Serialize.Linq",
+                      "DeclaringType": {
+                        "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                        "Name": "ExpressionFiddling.InteractionContext"
+                      },
+                      "Signature": "Int32 Charm"
+                    },
+                    "NodeType": 23,
+                    "Type": {
+                      "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                      "Name": "System.Int32"
+                    }
+                  },
+                  "Method": { "$type": "Serialize.Linq.Nodes.MethodInfoNode, Serialize.Linq" },
+                  "Right": {
+                    "$type": "Serialize.Linq.Nodes.ConstantExpressionNode, Serialize.Linq",
+                    "Type": {
+                      "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                      "Name": "System.Int32"
+                    },
+                    "Value": 2,
+                    "NodeType": 9
+                  },
+                  "NodeType": 15,
+                  "Type": {
+                    "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                    "Name": "System.Boolean"
+                  }
+                },
+                "Parameters": [
+                  {
+                    "$type": "Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq",
+                    "Name": "x",
+                    "NodeType": 38,
+                    "Type": {
+                      "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                      "Name": "ExpressionFiddling.InteractionContext"
+                    }
+                  }
+                ],
+                "NodeType": 18,
+                "Type": {
+                  "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                  "Name": "System.Func`2",
+                  "GenericArguments": [
+                    {
+                      "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                      "Name": "ExpressionFiddling.InteractionContext"
+                    },
+                    {
+                      "$type": "Serialize.Linq.Nodes.TypeNode, Serialize.Linq",
+                      "Name": "System.Boolean"
+                    }
+                  ]
+                }
+              },
+              "PlayerDialog": "You look great, did you change your hair?",
+              "Preview": "Be nice",
+              "NextId": "Hair"
+            },
+            {
+              "Player Dialog": "Let's get smashed!",
+              "Preview": "Let's get smashed!",
+              "NextId": "Bar"
+            }
+          ]
+
+        },
+        "Hair": {
+          "Statement": "I did, my usual stylist is on vacation but I've got half a mind to switch.'"
+        },
+        "Bar": {
+          "Statement":"Bar is over there..."
+        }
+      }
+    }
+  }
+}
